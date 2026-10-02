@@ -1,0 +1,76 @@
+/* we can use a single css file to style all the files in our wwebsite */
+
+/* you can pick your own background colors, text colors, and fonts */
+
+/* we can select an html element tag, in this case "body" will apply to the whole document */
+body {
+  background-size: 100%;
+  background-image: url('https://t4.ftcdn.net/jpg/02/40/63/55/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg');
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+  font-family: 'Courier New', monospace;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+
+h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  margin-left: 5px;
+}
+
+h3{
+  margin-left: 15px;
+  font-size: 140%;
+}
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 15px;
+  padding: 25px;
+  border: solid 1px #0026ff;
+  background-color: #5f71a1;
+  background-image: url('https://fancywalls.eu/wp-content/uploads/blue-aesthetic-stars-pattern-repeat-removable-wallpaper-design.jpg');
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  border: solid 1px #0026ff;
+  background-color: #5f71a1;
+}
+
+a {
+  font-family: 'Courier New', monospace;
+  line-height: 2;
+  color: #000000;
+  font-size: 17px;
+}
+
+.link-pile {
+  list-style: none;
+  column-width: 450px;
+}
+
+.link {
+  list-style: none;
+  float: right;
+  margin: 2px;
+}
+
+p{
+  margin-bottom: 90px;
+  font-size: 106%;
+  word-spacing: 5px;
+  line-height: 25px;
+  margin-left: 5px;
+}
+
