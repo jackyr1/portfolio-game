@@ -1,0 +1,98 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Fira Code', monospace;
+  background-color: red !important;
+  color: #f0f0f0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  font-weight: 500;
+}
+
+a {
+  color: #00fff7;
+  text-decoration: none;
+}
+
+p {
+  color: #f0f0f0;
+}
+
+.DarkText {
+  color: #000;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+.Button{
+  background-color: #00fff7;
+  /* color: #000; */
+  color:#f0f0f0;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* ===== Icons ===== */
+
+.large-icon {
+  width: 96px;
+  height: 96px;
+  margin: 0 10px;
+  filter: invert(1); /*optional for white icons on dark bg*/
+  transition: transform 0.3s;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  filter: invert(1); /*optional for white icons on dark bg*/
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ===== Section Headers ===== */
+.Section.Header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem 0 2rem;
+  color: #00fff7;
+}
+
+/* ===== Scroll To Top ===== */
+#scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
