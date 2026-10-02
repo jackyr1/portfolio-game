@@ -1,72 +1,383 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Jacky's Homepage</title>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/homepage.css">
+  <link rel="stylesheet" href="/assets/css/carousel.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+  <!-- Need for RSS feeds -->
+  <link type="application/atom+xml" rel="alternate" href="https://digx7.github.io/feed.xml" title="Everette Webber Portfolio">
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Jacky's Homepage</h1>
-			<div class="minor-section">
-				<!-- Note that all filenames use lowercase and no spaces -->
-					<img style="float: right;" src="./img/IMG_0462.jpg" class="self">
-					<h2>About Me</h2>
-					<p>Hi! I'm Jacky, a first year majoring in AGPM. I'm a big fan of video games and always finding time to play,
-						 hint the major choice:3 UC Santa Cruz has always been my dream school so I'm so happy to be here, enjoying
-						 the environment and learning so much about my passion. Other than wandering the beautiful forest, I love 
-						 listening to honestly all kinds of music. I enjoy trying new things that people wouldn't expect me to do 
-						 like random sports, classes, foods, hobbies and what not.
-						My favorite thing in the world are cats. I have at least 22 of them...
-						You can learn more about me from my <a href="https://pin.it/3n84bkEPz">Pinterest!</a>
-					</p>
-					
-			</div>
+  <div id="NavBar" class="">
+    <div class="NavButton" id="NavButton-Logo">
+        <a href="https://digx7.github.io/index.html">
+            <img src="/assets/images/Digx7-Logo-Black_v2.svg" alt="Logo" class="social-icon">
+        </a>
+    </div>
+    <div class="NavButton" id="NavButton-Resume"><a href="https://digx7.github.io/resume/">Resume</a></div>
+    <div class="NavButton" id="NavButton-Projects"><a href="https://digx7.github.io/projects/">Projects</a></div>
+    <div class="NavButton" id="NavButton-Blogs"><a href="https://digx7.github.io/blogs/">Blogs</a></div>
+</div>
+  
+  <main>
+    <div id="Welcome">
+    <div id="Welcome-Logo">
+        <img src="/assets/images/Digx7-Logo-Black_v2.svg" alt="Logo" class="large-icon">
+    </div>
+    <div id="Welcome-Header"><h1>Welcome!<br>I'm Digx7 a.k.a. Everette,<br>a Game Programmer!</h1></div>
+    <div id="Welcome-Message"><p>With a passion for creating and tackling the technical side of video games, I'd love to work with you on your project!<br>Check back here often to see what I'm currently working on.<br>Don't stop creating!</p></div>
+    <div class="Button" id="Welcome-ResumeButton">
+        <a href="https://digx7.github.io/resume/">
+            <p class="DarkText">Resume</p>
+        </a>
+    </div>
+    <div id="Welcome-Socials">
 
-			<div class="container">
-				<div style="text-align: center;">
-					<div style="display: inline-block;"><img class="cat" src="./img/catkiss.gif"></div>
-					<div style="display: inline-block;"><img class="cat2" src="./img/cateating.gif"></div>
-					<div style="display: inline-block;"><img class="cat3" src="./img/spincat.gif"></div>
-				</div>
+        <div id="Welcome-Socials-Github">
+            <a href="https://github.com/Digx7" target="_blank">
+                <img src="/assets/images/github-mark.svg" alt="GitHub" class="social-icon">
+            </a>
+        </div>
 
-		</section>
-			<nav id="links">
-			<h3>Labs</h3>
-			<div class="minor-section">
-			<ul class="link-pile">
-				<li><a style="font-family: 'Courier New', monospace;" href="lab2/index.html">Lab 2 HMTL & CSS</a></li>
-				<li><a href="lab3/index.html">Lab 3 File Structure & File Transfer</a></li>
-				<li><a href="lab4/index.html">Lab 4 Pseudocoding and Problem-solving</a></li>
-				<li><a href="lab5/index.html">Lab 5 Data Types and Variables</a></li>
-				<li><a href="lab6/index.html">Lab 6 Arrays and Objects</a></li>
-				<li><a href="lab7/index.html">Lab 7 Functions</a></li>
-				<li><a href="lab8/index.html">Lab 8 Anon Functions and Callbacks</a></li>
-				<li><a href="lab9/index.html">Lab 9 Libraries and jQuery</a></li>
-				<li><a href="lab10/index.html">Lab 10 JavaScript for the Web</a></li>
-				<li><a href="lab11/index.html">Lab 11 JavaScript Events and Forms</a></li>
-				<li><a href="lab12/index.html">Lab 12 Conditionals</a></li>
-				<li><a href="lab13/index.html">Lab 13 Loops</a></li>
-				<li><a href="lab14/index.html">Lab 14 </a></li>
-				<li><a href="lab15/index.html">Lab 15 AJAX</a></li>
-				<li><a href="lab16/index.html">Lab 16 JSON and APIs</a></li>
-			</div>
-			</ul>
-		</nav>
-	</main>
-</body>
-</html>
+        <div id="Welcome-Socials-Itchio">
+            <a href="https://digx7.itch.io" target="_blank">
+                <img src="/assets/images/itchio-logo-textless-black.svg" alt="Itchio" class="social-icon">
+            </a>
+        </div>
+
+        <div id="Welcome-Socials-LinkedIn">
+            <a href="https://www.linkedin.com/in/everette-webber-172498165/" target="_blank">
+                <img src="/assets/images/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+
+        <div id="Welcome-Socials-Instagram">
+            <a href="https://www.instagram.com/digx7_v2/" target="_blank">
+                <img src="/assets/images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div id="Projects">
+    <div class="Section Header" id="Projects-Header"><h2>Projects</h2></div>
+
+    <div class="carousel-container">
+        <button class="carousel-arrow left">❮</button>
+
+        <div class="carousel-track" style="transform: translateX(0px);">
+            
+            
+
+            
+                <a href="/projects/frost-loop-steam-game/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnails/FrostLoop_Generic_1080x1080_v2.webp" alt="Frost Loop (Steam Game) thumbnail">
+                        
+
+                        
+                            <h2>Frost Loop (Steam Game)</h2>
+                        
+
+                        
+                            <p>My first Steam Game</p>
+                        
+                    </div>
+                </a>
+            
+                <a href="/projects/fantasy-warrior-lowbit-animated-pixel-art-portraits/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnail-Fantasy_Warrior_Lowbit_Animated_Pixel_Art_Portraits.png" alt="Fantasy Warrior Lowbit Animated Pixel Art Portraits thumbnail">
+                        
+
+                        
+                            <h2>Fantasy Warrior Lowbit Animated Pixel Art Portraits</h2>
+                        
+
+                        
+                            <p>The third series of game assets I made</p>
+                        
+                    </div>
+                </a>
+            
+                <a href="/projects/kart-city-racing/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnail-Kart_City_Racing.png" alt="Kart City Racing thumbnail">
+                        
+
+                        
+                            <h2>Kart City Racing</h2>
+                        
+
+                        
+                            <p>A game made for my computer science capstone project</p>
+                        
+                    </div>
+                </a>
+            
+                <a href="/projects/cube-a-pico-8-game/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnail-Cube.png" alt="Cube (a PICO-8 game) thumbnail">
+                        
+
+                        
+                            <h2>Cube (a PICO-8 game)</h2>
+                        
+
+                        
+                            <p>A small zelda like game I made in a week for PICO-8</p>
+                        
+                    </div>
+                </a>
+            
+                <a href="/projects/rally-0/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnail-Rally_0.png" alt="Rally 0 thumbnail">
+                        
+
+                        
+                            <h2>Rally 0</h2>
+                        
+
+                        
+                            <p>A game I made over a summer</p>
+                        
+                    </div>
+                </a>
+            
+                <a href="/projects/tenet-fan-game/" class="carousel-item">
+                    <div>
+                        
+                            <img src="/assets/images/Thumbnail-TENET_fan_game.png" alt="TENET (fan game) thumbnail">
+                        
+
+                        
+                            <h2>TENET (fan game)</h2>
+                        
+
+                        
+                            <p>A game made for the Mini Jam 63: Future game jam.</p>
+                        
+                    </div>
+                </a>
+            
+
+            <a href="https://digx7.github.io/projects/" class="carousel-item">
+                <div>
+                    <img src="/assets/images/Digx7-Logo-White_v2.svg" alt=" thumbnail">
+                    <h2>View More</h2>
+                    <p>See all projects</p>
+                </div>
+            </a>
+            
+        </div>
+        
+
+        <button class="carousel-arrow right">❯</button>
+    </div>
+</div>
+
+<div id="Blogs">
+    <div class="Section Header" id="Blogs-Header"><h2>Blogs</h2></div>
+
+    <div class="carousel-container">
+        <button class="carousel-arrow left">❮</button>
+
+        <div class="carousel-track" style="transform: translateX(0px);">
+            
+            
+            
+            
+            
+            <a href="/2026/03/27/Final-Stretch/" class="carousel-item">
+                <div>
+                    
+                        <img src="/assets/images/Thumbnails/FrostLoop_Devlog_8_Thumbnail.webp" alt="Final Stretch | Frost Loop | Devlog 8 thumbnail">
+                    
+
+                    
+                        <h2>Final Stretch | Frost Loop | Devlog 8</h2>
+                    
+
+                    
+                        <i>2026-03-27</i>
+                    
+
+                    
+                        <p>My Games Out Now!</p>
+                    
+                </div>
+            </a>
+            
+            <a href="/2026/03/07/Next-Fest-Failed/" class="carousel-item">
+                <div>
+                    
+                        <img src="/assets/images/Thumbnails/FrostLoop_Devlog_7_Thumbnail.webp" alt="Next Fest Failed...? | Frost Loop | Devlog 7 thumbnail">
+                    
+
+                    
+                        <h2>Next Fest Failed...? | Frost Loop | Devlog 7</h2>
+                    
+
+                    
+                        <i>2026-03-07</i>
+                    
+
+                    
+                        <p>My game participated in NextFest!</p>
+                    
+                </div>
+            </a>
+            
+            <a href="/2026/02/03/The-Making-of-Treasure-Hunt/" class="carousel-item">
+                <div>
+                    
+                        <img src="/assets/images/Thumbnails/TreasureHunt_Thumbnail.webp" alt="The Making of Treasure Hunt | Game Jam thumbnail">
+                    
+
+                    
+                        <h2>The Making of Treasure Hunt | Game Jam</h2>
+                    
+
+                    
+                        <i>2026-02-03</i>
+                    
+
+                    
+                        <p>An educational game in 12 hours!</p>
+                    
+                </div>
+            </a>
+            
+            <a href="/2025/12/19/Tools-Unlocked/" class="carousel-item">
+                <div>
+                    
+                        <img src="/assets/images/Thumbnails/FrostLoop_Devlog_6_Thumbnail.webp" alt="Tools Unlocked | Frost Loop | Devlog 6 thumbnail">
+                    
+
+                    
+                        <h2>Tools Unlocked | Frost Loop | Devlog 6</h2>
+                    
+
+                    
+                        <i>2025-12-19</i>
+                    
+
+                    
+                        <p>Tools to help be Dev!</p>
+                    
+                </div>
+            </a>
+            
+            <a href="/2025/11/08/Steam-Store-Page-Setup/" class="carousel-item">
+                <div>
+                    
+                        <img src="/assets/images/Thumbnails/FrostLoop_Devlog_5_Thumbnail.webp" alt="Steam Store Page Setup | Frost Loop | Devlog 5 thumbnail">
+                    
+
+                    
+                        <h2>Steam Store Page Setup | Frost Loop | Devlog 5</h2>
+                    
+
+                    
+                        <i>2025-11-08</i>
+                    
+
+                    
+                        <p>I have a steam store page now!</p>
+                    
+                </div>
+            </a>
+            
+
+            <a href="https://digx7.github.io/blogs/" class="carousel-item">
+                <div>
+                    <img src="/assets/images/Digx7-Logo-White_v2.svg" alt=" thumbnail">
+                    <h2>View More</h2>
+                    <p>See all blogs</p>
+                </div>
+            </a>
+
+        </div>
+
+        <button class="carousel-arrow right">❯</button>
+    </div>
+</div>
+
+<div id="About">
+    <div class="Section Header" id="About-Header"><h2>About</h2></div>
+    <div id="About-Content">
+        <p>Hello!  I'm Everette a.k.a. Digx7, and I have been teaching myself Game Programming for as long as I can remember.
+            <br>From making levels in Little Big Planet, to Learning Unity through YouTube, to obtaining a Computer Science degree to advance my skills, everything I've learned I've done to hone my craft.
+            <br>Now I'm pursing either a job at a studio or full time free lancing.</p>
+    </div>
+</div>
+
+<div id="Contact">
+    <div class="Section Header" id="Contact-Header"><h2>Contact</h2></div>
+    <div id="Contact-Content">
+        <a href="https://github.com/Digx7" target="_blank">
+            <img src="/assets/images/github-mark.svg" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://digx7.itch.io" target="_blank">
+            <img src="/assets/images/itchio-logo-textless-black.svg" alt="Itchio" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/everette-webber-172498165/" target="_blank">
+            <img src="/assets/images/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/digx7_v2/" target="_blank">
+            <img src="/assets/images/instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+</div>
+  </main>
+
+  <div id="Footer">
+    <div class="footer-logo">
+        <a href="index.html">
+            <img src="/assets/images/Digx7-Logo-Black_v2.svg" alt="Logo" class="social-icon">
+        </a></div>
+
+    <nav class="footer-nav">
+        <a href="/resume/">Resume</a>
+        <a href="/projects/">Projects</a>
+        <a href="/blogs/">Blogs</a>
+    </nav>
+
+    <div class="socials">
+        <a href="https://github.com/Digx7" target="_blank">
+            <img src="/assets/images/github-mark.svg" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://digx7.itch.io" target="_blank">
+            <img src="/assets/images/itchio-logo-textless-black.svg" alt="Itchio" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/everette-webber-172498165/" target="_blank">
+            <img src="/assets/images/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/digx7_v2/" target="_blank">
+            <img src="/assets/images/instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+
+    <p>© 2025 Everette. Built with Jekyll and love.</p>
+</div>
+
+  <button id="scrollToTop" title="Back to Top" class="">↑</button>
+
+  <script src="/assets/js/carousel.js"></script>
+  <script src="/assets/js/scrollToTop.js"></script>
+  <script src="/assets/js/hideNavBar.js"></script>
+
+
+
+</body></html>
