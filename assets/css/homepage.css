@@ -1,0 +1,58 @@
+/* ===== Welcome Section (Hero) ===== */
+#Welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(145deg, #0f0f0f, #1f1f1f);
+}
+
+#Welcome-Header h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+#Welcome-Message {
+  max-width: 600px;
+  margin: 1rem 0 2rem;
+}
+
+#Welcome-ResumeButton {
+  background-color: #00fff7;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#Welcome-ResumeButton:hover {
+  background-color: #00d5cc;
+}
+
+#Welcome-Socials {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Welcome-Socials > div {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* ===== About Section ===== */
+#About, #Contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #121212;
+}
+
+#About-Content, #Contact-Content {
+  max-width: 700px;
+  margin: auto;
+}
